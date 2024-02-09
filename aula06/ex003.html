@@ -1,26 +1,46 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro programa</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: linear-gradient(to right, blue, rgb(30, 167, 231), rgb(0, 162, 255));
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+        }
+
+        h1 {
+            color: yellow;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+    </style>
 </head>
+
 <body>
     <h1>Olá mundo!</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio est hic quisquam inventore illo ut enim nemo possimus vel maiores quibusdam veniam voluptates accusamus sint numquam, facere nulla provident!</p>
+    <p>
+        Já me livrei da maldição!
+    </p>
 
     <script>
-        var n1 = Number.parseInt( window.prompt ('digite o numero')) // string
-        var n2 = Number.parseInt(window.prompt ('digite outro numero')) // string
-        var s = n1 + n2
-        window.alert ('a soma dos dois numeros é' + String(s))
-        window.alert (` a soma entre ${n1} e ${n2} é igual a ${s}`)
-        // diferenciar para o javascript
-        // number + number = x adição
-        // string + string = x concatenação
-        // Como nesse pode usar apenas Number para a conversão de string para number
+        var n1 = Number(window.prompt('Digite um numero: ')) // VALOR STRING
+        var n2 = Number(window.prompt('Digite outro numero: ')) // VALOR STRING
+        var s = n1 + n2 // CONVERTER STRING PARA NUMBER
+        window.alert(`A soma dos valores ${n1} + ${n2} é ${s}`) //CONCATENAÇÃO
+        // (NUMBER + NUMBER) PARA ADIÇÃO
+        // (STRING + STRING) PARA CONCATENAÇÃO
+
+        //USAR a CRAZY E ${} PARA FAZER A RELAÇÃO DAS VARIÁVEIS
     </script>
 </body>
+
 </html>

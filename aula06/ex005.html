@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(58, 61, 228);
+            font: normal 18pt arial;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <!-- <div id="msg">Clique em mim</div> -->
+    <!-- <div name="msg">Clique em mim</div> -->
+    <div class="msg">Clique em mim</div>
+
+    <script>
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+
+        var p1 = window.document.getElementsByTagName('p')[1] 
+        // Posso inserir uma ordem por exemplo o "p" é 0 e o outro "p" é 1, dentro de cochetes
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        //"innerText" é o texto que está no primeiro paragrafo
+        p1.style.color = 'blue'
+        document.write(p1.innerHTML) 
+        //"innerhtml" já vem com a formatação feita no documento html.
+
+        //var d = window.document.getElementById('msg')
+        //d.style.background = 'green'
+        //d.innerText = 'Estou aguardando...'
+        // window.document.getElementById('msg').innerText = 'Estou aguardando...'
+        // COMO ESCRITO ACIMA, TEM MANEIRAS DIRETAS PARA SIMPLIFICAR O CODIGO
+
+        //var d = window.document.getElementsByName('msg')[0]
+        //d.innerText = 'Olá!'
+
+        var d = window.document.querySelector('div.msg')
+        d.style.background = 'blue'
+    </script>
+    
+</body>
+</html>

@@ -1,3 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio mensagens</title>
+    <style>
+        form {
+            background-color: gray;
+            width: 50vw;
+            height: 18vh;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Desafio das mensagens</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Mensagens</legend>
+            <button type="button" id="bot" onclick="clicar()">Botão 1</button>
+            <input type="button" value="Botão 2" id="bot" onclick="clicar1()"></input>
+            <button type="button" id="bot" onclick="clicar2()">Botão 3</button>
+        </fieldset>
+    </form>
+
+    <script>
+        function clicar() {
+            let bot = String(window.alert('Você clicou no 1° botão!'))
+        }
+        function clicar1() {
+            let bot = String(window.alert('Você clicou no 2° botão!'))
+        }
+        function clicar2() {
+            let bot = String(window.alert('Você clicou no 3° botão!'))
+        }
+    </script>
 </body>
+
 </html>

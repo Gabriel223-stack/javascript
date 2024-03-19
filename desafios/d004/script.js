@@ -3,5 +3,5 @@ function clicar() {
     var val = Number(window.prompt(`Quanto custa ${pro} que você está comprando?`))
     var pag = Number(window.prompt(`Qual foi o valor que você deu para pagar ${pro}?`))
     var res = pag-val
-    window.alert(`Você comprou ${pro} que custou R$${val}. Deu R$${pag} em dinheiro e vai receber R$${res} de troco. Volte sempre!`)
+    window.alert(`Você comprou ${pro} que custou ${val.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}. \nDeu ${pag.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} em dinheiro e vai receber ${res.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})} de troco. \nVolte sempre!`)
 }

@@ -38,6 +38,7 @@ main > div#main-content > h1 {
 
     text-align: center;
     font-weight: 700;
+    color: #fff;
 }
 
 main > div#main-content > button {
@@ -61,4 +62,5 @@ main div.content {
     font-weight: bolder;
     line-height: 2em;
     margin-top: 20px;
+    color: #fff;
 }

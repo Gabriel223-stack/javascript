@@ -1,5 +1,5 @@
 function conversor() {
-    let val = Number(window.prompt('Digite uma temperatura e, °C (Celsius'))
+    let val = Number(window.prompt('Digite uma temperatura em graus °C (Celsius'))
     let res = document.getElementById('res')
 
     res.innerHTML = '' //ADICIONAR ISTO, LIMITA O CLIQUE PARA UMA VEZ DE CADA, E NÃO FICA ACUMULANDO RESPOSTAS
